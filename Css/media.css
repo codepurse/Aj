@@ -1,0 +1,24 @@
+@media screen and (max-width: 414px) {
+	.lblh, .lbli {
+		font-size: 70px;
+	}
+	.colright, .colleft {
+		padding: 1px !important;
+	}
+}
+
+@media screen and (min-width: 480px) {
+  .box {
+    width: 28rem;
+  }
+}
+@media screen and (min-width: 767px) {
+  .box {
+    width: 40rem;
+  }
+}
+@media screen and (min-width: 959px) {
+  .box {
+    width: 50rem;
+  }
+}

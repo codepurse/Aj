@@ -1,0 +1,121 @@
+body,html {
+	width: 100%;
+	height: 100%;
+}
+.maincontainer {
+	height: 100vh;
+	background: linear-gradient(
+    to right, 
+    #212121 0%, 
+    #212121 50%, 
+    #ffffff 50%, 
+    #ffffff 100%
+  );
+}
+
+.btndesign, .btnabout {
+	font-weight: bold;
+	font-family: muli;
+	color: white !important;
+	font-size: 18px;
+	cursor: pointer;
+	transition: all 0.1s;
+}
+.btncontact {
+	font-weight: bold;
+	font-family: muli;
+	color: #424242 !important;
+	font-size: 18px;
+	cursor: pointer;
+	transition: all 0.1s;
+}
+.row1 {
+	padding: 5px;
+	padding: 0px !important;
+}
+.colblack {
+	background: linear-gradient(
+    to right, 
+    #212121 0%, 
+    #212121 50%, 
+    #ffffff 50%, 
+    #ffffff 100%
+  );
+}
+.colwhite {
+	background: linear-gradient(
+    to right, 
+    #ffffff 0%, 
+    #ffffff 50%, 
+    #212121 50%, 
+    #212121 100%
+  );
+}
+.lblh {
+	top: -5% !important;
+	font-size: 150px;
+	color: white;
+	font-family: Keep Calm;
+	margin:0 auto;
+	width: 100%;
+	line-height: 70px;
+}
+.lbli {
+	
+	font-family: Keep Calm;
+	font-size: 150px;
+	margin:	0 auto;
+	width: 100%;
+	padding: 0px;
+	line-height: 70px;
+}
+.check {
+	font-size: 20px;
+	padding: 10px 30px !important;
+	padding-right: 3px !important;
+	color: white;
+	font-family: Keep Calm;
+	border:2px solid white;
+	border-right: 0px;
+	background-color: transparent;
+}
+.more {
+	font-size: 20px;
+	padding: 10px 30px !important;
+	padding-left: 3px !important;
+	color: #212121;
+	font-family: Keep Calm;
+	border:2px solid #212121;
+	text-align: right;
+	border-left: 0px;
+	background-color: transparent;
+}
+.p2 {
+	width: 100%;
+}
+#txt1, #txt2 {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+.hide {
+    opacity: 0 !important;
+}
+
+.lbltitle {
+	font-family: Keep Calm;
+	font-size: 40px;
+	font-weight: bold;
+	color:#212121;
+}
+
+.box {
+	 background: #fff;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 4px 2px -2px;
+  font-family: "adelle-sans", sans-serif;
+  font-weight: 100;
+  margin: 48px auto;
+  width: 20rem;
+  border: 1px solid #ccc;
+  height: 20rem;
+}

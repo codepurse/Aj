@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="Css/index.css">
+	<script src="Script\jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="Css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="Css/media.css">
+	<link rel="stylesheet" type="text/css" href="Css/font.css">
+	<title>Welcome</title>
+</head>
+<body>
+	<div class="container-fluid maincontainer">
+
+		<nav class="navbar navbar-expand-md nav-dark">
+	        <button class="navbar-toggler" data-toggle="navbar-collapse" data-target="#collapse">
+	          <span class="navbar-toggler-icon"></span>
+	        </button>
+	        <nav class="navbar-brand" href="#">
+	        	<span style="margin-left: 5px;color:white"></span>
+	      	</nav>
+	        <div class="collapse navbar-collapse" id="collapse">
+	           <div class="col2 mx-auto">
+	                <ul class="nav navbar-nav">
+	                	<li><a class="nav-link btndesign" style="margin-right: 20px;">Design</a></li>
+	                	<li><a class="nav-link btnabout" style="margin-right: 20px;">About</a></li>
+	                    <li><a class="nav-link btncontact" target="_self" style="margin-right: 20px;">Contact</a></li> 
+	                    <li><a class="nav-link btncontact" target="_self">Works</a></li> 
+	                </ul>
+	              </div>
+	            </div>
+	          </nav>
+
+		<div class="row  row1 align-items-center h-100" >
+			<div class="col-lg-6 col-md-6 col-sm-6 col-6 text-right colright" style="margin-top:-5%;">
+				<label class="lblh" id="txt1">H</label>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-6 col-6 colleft" style="margin-top:-5%;">
+				<label class="lbli" id="txt2">i</label>
+			</div>
+		</div>	
+	</div>
+	<script type="text/javascript">
+		var text=["Ho","Ci","Sha","안","侬","H"];
+		var text2=["la","ao","lom","녕","好","i"]
+		var counter=0;
+		var elem = document.getElementById("txt1");
+		var elem1 = document.getElementById("txt2");
+		setInterval(change, 3000);
+
+		function change() {
+			 elem.classList.add('hide');
+			 elem1.classList.add('hide');
+			 		setTimeout(function () {
+			        elem.innerHTML = text[counter];
+			        elem.classList.remove('hide');
+			        elem1.innerHTML = text2[counter];
+			        elem1.classList.remove('hide');
+			        counter++;
+			        if (counter >= text.length) {
+			            counter = 0;
+			        }
+			    }, 500);
+		}
+	</script>
+</body>
+</html>
