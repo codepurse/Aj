@@ -1,24 +1,59 @@
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 752px) {
+  .arrowdown {
+    left: 47.6% !important;  
+  }
 	.lblh, .lbli {
 		font-size: 70px;
 	}
 	.colright, .colleft {
 		padding: 1px !important;
 	}
+  ul > li {
+    display: inline;
+  }
+  .lblabout {
+    font-size: 15px;
+    
+  }
+  .colfgt {
+    text-align: center !important;
+  }
+  .lbldesign {
+    font-size: 20px;
+  }
+  .lblsubdesign {
+    width: 100%;
+  }
+  .lblname {
+    font-size: 25px;
+  }
+  .lbldescription {
+    font-size: 17px;
+    width: 100%;
+  }
+  .image {
+    display: inline !important; 
+    text-align: center !important;
+    vertical-align: middle;
+  }
+  .imgimage {
+    display: inline !important;
+    margin-right: 10px;
+    width: 100%;
+    margin-top: -100px;
+  }
+  .vl {
+    visibility: hidden;
+  }
+  .colabout {
+    padding: 0px !important;
+    margin: 0px !important;
+    text-align: center !important;
+  }
 }
 
-@media screen and (min-width: 480px) {
-  .box {
-    width: 28rem;
-  }
-}
-@media screen and (min-width: 767px) {
-  .box {
-    width: 40rem;
-  }
-}
-@media screen and (min-width: 959px) {
-  .box {
-    width: 50rem;
+@media screen and (max-width: 414px) {
+  .arrowdown {
+    left: 45.6% !important;  
   }
 }

@@ -34,13 +34,71 @@
 	          </nav>
 
 		<div class="row  row1 align-items-center h-100" >
-			<div class="col-lg-6 col-md-6 col-sm-6 col-6 text-right colright" style="margin-top:-5%;">
-				<label class="lblh" id="txt1">H</label>
+			<div class="arrow bounce arrowdown" style="width: 40px; position: absolute;left: 48.9%;top:90%;">
+ 				<a href="#row2"> <img class="fa fa-arrow-down fa-2x" src="Image/down.png" class="img-fluid" style="width: 35px;cursor: pointer;"></a>
+ 			</div>
+			<div class="col-lg-6 col-md-6 col-sm-6 col-6 text-right colright" style="margin-top:-5%;position: relative;">
+				<label class="lblh" id="txt1">H</label><br>
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-6 col-6 colleft" style="margin-top:-5%;">
 				<label class="lbli" id="txt2">i</label>
 			</div>
 		</div>	
+	</div>
+	<div class="container-fluid" style="padding-bottom: 40px;">
+		<div class="container">
+			<div class="row" id="row2" style="padding-top: 100px;">
+				<div class="col-lg-12">
+					<label class="lbldesign">Design Labs.</label><br>
+					<label class="lblsubdesign">Design laboratory is a collection of my personal projects  and experiments. As a Web Developer/Desinger I always take some time to upgrade my skills
+					and build new creative design concepts. I work hard to keep my coding skills up to date.</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6" style="margin-top: 30px;isolation: isolate;">
+					<a href="datask.html"><img src="Image/datask.png"  class="img-fluid imgdesign"></a>
+				</div>
+				<div class="col-lg-6" style="margin-top: 30px;">
+					<a href="velco.html"><img src="Image/velco.png"  class="img-fluid imgdesign"></a>
+				</div>
+			</div>
+			<div class="row" style="margin-top:40px;">
+				<div class="col-lg-6" style="margin-top: 30px;">
+					<a href="food.html"><img src="Image/employee.jpg"  class="img-fluid imgdesign"></a>
+				</div>
+				<div class="col-lg-6" style="margin-top: 30px;">
+					<a href="food.html"><img src="Image/food.jpg"  class="img-fluid imgdesign"></a>
+				</div>
+			</div>
+			<div class="row" style="margin-top:40px;">
+				<div class="col-lg-6" style="margin-top: 30px;">
+					<a href="anime.html"><img src="Image/anime.jpg"  class="img-fluid imgdesign"></a>
+				</div>
+				<div class="col-lg-6" style="margin-top: 30px;">
+					<a href="travel.html"><img src="Image/travel.jpg"  class="img-fluid imgdesign"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid" style="background-color: #212121">
+		<div class="container">
+			<div class="row" style="padding-right: 1px;padding-top:50px;">
+				<div class="col-lg-11">
+					<label class="lblname">This is Alfon Labadan</label><br>
+					<label class="lbldescription"> I'm a web developer / designer and i love developement. I love minimalism, less animation, less color scheme, simpler is better than better. It meets spec, it's easier to understand. it's easier to maintain and most likely a whole lot less buggy.</label><br>
+					<button class="btncontact1">Contact</button>
+				</div>
+				<div class="col-lg-1 col-sm-12 text-right colabout">
+						<div class="vl"></div>
+						<div class="image text-right">
+							<img src="Image/facebook-logo.png" class="img-fluid imgimage" style="width: 25px;display: block;margin-bottom: 15px;cursor: pointer;">
+							<img src="Image/git-logo.png" class="img-fluid imgimage" style="width: 25px;display: block;margin-bottom: 15px;cursor: pointer;">
+							<img src="Image/twitter-logo.png" class="img-fluid imgimage" style="width: 25px;display: block;margin-bottom: 15px;cursor: pointer;">
+						</div>
+						<div class="vl"></div>
+				</div>
+			</div>
+		</div>
 	</div>
 	<script type="text/javascript">
 		var text=["Ho","Ci","Sha","안","侬","H"];
@@ -48,7 +106,7 @@
 		var counter=0;
 		var elem = document.getElementById("txt1");
 		var elem1 = document.getElementById("txt2");
-		setInterval(change, 3000);
+		setInterval(change, 2500);
 
 		function change() {
 			 elem.classList.add('hide');
