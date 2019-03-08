@@ -57,3 +57,8 @@
     left: 45.6% !important;  
   }
 }
+@media screen and (max-width: 349px) {
+  .arrowdown {
+    left: 44.7% !important;  
+  }
+}
