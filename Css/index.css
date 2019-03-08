@@ -187,9 +187,6 @@ body,html {
 .ulimage {
 	display: block;
 }
-li {
-	margin-top: 15px;
-}
 .vl {
   border-left:2px solid white;
   height: 50px;
@@ -221,4 +218,23 @@ li {
 .btncontact1:hover {
 	background-color: white;
 	color: #212121 !important;
+}
+
+.lblfooter {
+	font-family: muli;
+	color: #9E9E9E;
+	font-size: 19px;
+}
+
+ul > li {
+	margin-right: 30px;
+	color: white;
+	cursor: pointer;
+}
+hr {
+	margin-top: -10px !important;
+	margin-bottom: -5px !important;
+	width: 4%;
+	height: 1px;
+	background-color: white;
 }

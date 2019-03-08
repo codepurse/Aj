@@ -52,6 +52,11 @@
   }
 }
 
+@media screen and (max-width: 391px) {
+  ul > li {
+    margin-right: 20px;
+  }
+}
 @media screen and (max-width: 414px) {
   .arrowdown {
     left: 45.6% !important;  
