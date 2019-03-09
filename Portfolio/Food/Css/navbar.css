@@ -1,0 +1,48 @@
+body,html {
+	width: 100%;
+	height: 100%;
+}
+.container {
+	width: 100%;
+	height: 92% !important;
+}
+.navbar {
+	/*border-bottom: 1px solid #efefef;
+	-webkit-box-shadow: 0 8px 6px -6px #efefef;
+    -moz-box-shadow: 0 8px 6px -6px #efefef;
+    box-shadow: 0 8px 6px -6px #efefef; */
+    font-family: Caviar Dreams;
+    font-weight: bold;
+    font-size: 14px;
+}
+.navbar-brand {
+	font-family: Code;
+	font-weight: bold;
+	font-size: 21px !important;
+	color: white !important;
+	margin-top: 2px;
+}
+.navbar-brand img {
+	width: 35px;
+	margin-top: -5px;
+}
+.btnsolutions , .btnpricing , .btncompany , .btnresources , .btngetstarted {
+	color:white !important;
+	cursor:pointer;
+	transition: 0.2s;
+}
+.btnsolutions:hover , .btnpricing:hover , .btncompany:hover , .btnresources:hover {
+	color: #f46b53 !important;
+	cursor:pointer;
+}
+.btngetstarted {
+	border: 1px solid white;
+	border-radius: 4px;
+	padding-top: 8px;
+	padding-bottom: 7px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.btngetstarted:hover {
+	
+}

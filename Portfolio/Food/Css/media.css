@@ -1,0 +1,19 @@
+@media screen and (max-width: 518px) {
+	.lbltitle {
+		font-size: 35px;
+		line-height: 50px;
+	}
+	.lblsubtitle {
+		font-size: 15px;
+	}
+	.lblcoltitle {
+		font-size: 20px;
+		text-align: center;
+		width: 100%;
+	}
+	.lblcolsubtitle {
+		font-size: 30px;
+		text-align: center;
+		width: 100%;
+	}
+}
