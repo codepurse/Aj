@@ -1,0 +1,26 @@
+@font-face {
+	font-family: "Madeleina Sans";
+	src: url("../Font/Madeleina/Madelina Sans.otf");
+	src:
+	url("../Font/Madeleina/Madelina Sans.otf") format("opentype");
+}
+@font-face {
+	font-family: "muli";
+	src: url("../Font/Muli/muli/Muli.ttf");
+}
+@font-face {
+	font-family: "Renogare Soft";
+	src: url("../Font/renogare_soft/RenogareSoft-Regular.ttf");
+}
+@font-face {
+	font-family: "Mont DEMO";
+	src: url("../Font/mont/Mont-HeavyDEMO.otf") format("opentype");
+}
+@font-face {
+	font-family: "Mont DEMOlight";
+	src: url("../Font/mont/Mont-ExtraLightDEMO.otf") format("opentype");
+}
+@font-face {
+	font-family: "Retronoid";
+	src: url("../Font/retronoid/Retronoid.otf") format("opentype");
+}

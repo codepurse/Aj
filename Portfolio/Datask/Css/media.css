@@ -1,0 +1,16 @@
+@media screen and (max-width: 1200px) {
+	.btnlearn1 {
+		margin-bottom: 30px;
+	}
+}
+@media screen and (max-width: 414px) {
+	.lblwelcome {
+		font-size: 30px;
+	}
+	.rowmaincol {
+		margin-top: 20px;
+	}
+	.con2 {
+		margin-top:30px;
+	}
+}
