@@ -3,7 +3,7 @@
     left: 47.6% !important;  
   }
 	.lblh, .lbli {
-		font-size: 70px;
+		font-size: 80px;
 	}
 	.colright, .colleft {
 		padding: 1px !important;
@@ -52,11 +52,6 @@
   }
 }
 
-@media screen and (max-width: 391px) {
-  ul > li {
-    margin-right: 20px;
-  }
-}
 @media screen and (max-width: 414px) {
   .arrowdown {
     left: 45.6% !important;  
@@ -70,5 +65,10 @@
 @media screen and (max-width: 477px) {
   .arrowdown {
     left: 46.3% !important;  
+  }
+}
+@media screen and (max-width: 381px) {
+  .arrowdown {
+    left: 45.5  % !important;  
   }
 }
