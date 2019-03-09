@@ -4,9 +4,11 @@
   }
 	.lblh, .lbli {
 		font-size: 80px;
+
 	}
 	.colright, .colleft {
 		padding: 1px !important;
+    top:-8%;
 	}
   ul > li {
     display: inline;
