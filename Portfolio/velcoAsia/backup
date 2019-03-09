@@ -1,0 +1,161 @@
+<html>
+  <head>
+      <title>
+          VelcoAsia Management
+      </title
+      <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="Scripts\jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="Content\bootstrap.min.css" />
+    <script src="Scripts\bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="fontstyle.css" />
+  </head>
+<body>
+    <nav class="navbar navbar-expand-md sticky-top navbar-light bgcolor">
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav class="navbar-brand" href="#">
+        <img src ="Logo.png" alt="Logo">
+      </nav>
+      <div class="collapse navbar-collapse" id="collapse">
+          <ul class="nav navbar-nav ml-auto">
+            <li><a class="nav-link" href="#">Home</a></li>
+            <li><a class="nav-link" href="#">About</a></li>
+            <li><a class="nav-link" href="#">Contact</a></li>
+            <li><input type="button" value="Contact Us" class="btncontact"/></li>
+          </ul>
+      </div>
+    </nav>
+<div id="Home" class="container-fluid">
+  <div class="row d-flex align-items-center justify-content-center">
+    <div class="col-12 table-responsive borderless">
+        <table class="table">
+          <tr>
+            <td>
+              <img src="manila.jpg" class="img-fluid mx-auto d-block">
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <h1 class="h1">VelcoAsia Group of Companies</h1>
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <h4 class="h4">The member companies are recognized industry leaders in their specialized field of business.</h4>
+            </td>
+          </tr>
+            <tr>
+              <td>
+                <input type="button" name="name" class="btnknow" value="View More"/>
+              </td>
+            </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+<div id="Home2" class="container-fluid">
+  <div class="container" >
+    <div class="row">
+      <div class="col-md-6 d-flex">
+          <img src="service1.png" alt="Service Logo" id="imgclass2" class="img-fluid mx-auto d-block">
+      </div>
+      <div class="col-md-6">
+          <h1 class="Contact">Get in touch</h1>
+          <p class="home2p1">We are eager to discuss your business needs,and answer any question
+          you may have. Feel free to contact us directly, We'll try to answer your
+        request as soon as possible.</p>
+          <div class="form-group">
+              <label>Name</label>
+              <input type="Text" class="form-control">
+          </div>
+          <div class="form-group">
+              <label>Email</label>
+              <input type="Text" class="form-control">
+          </div>
+          <div class="form-group">
+              <label>Message</label>
+              <textarea value="" class="form-control" rows="4"></textarea>
+          </div>
+          <div class="form-group">
+            <input type="submit" name="name" value="Submit" class="btnsubmit">
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="Home3" class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="form-group">
+      <h1 class="home3p1">We are on a mission to consistently strive for excellence to meet customers need
+      and expectation</h1>
+         <p class="p1 d-flex">The strength of the member companies are the core qualities of character of its officers and staff members. Highly ethical commitment to professionally serve customer's requirements, determination, strategic conception and action,
+         strong team spirit, enjoyment in the job, building confidence, fairness and fostering cooperation among its co-employees. Management leads by example through a commitment that empowers the organization
+         at every level to strive for the highest levels of quality of service, efficient and cost effective customer care and shareholders</p>
+         <p class="p2 ">Why VelcoAsia?</p>
+      </div>
+    <div class="col-md-4">
+      <div class="form-group d-flex flex-column">
+        <img src ="Image\company.png" alt="Company" class="img-fluid imgcomp">
+        <label class="l1">Companies</label>
+        <label class="l2">VelcoAsia Group is a Philippine enterprise consisting <b>15</b> member companies  </label>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-group">
+        <div class="form-group d-flex flex-column">
+          <img src ="Image\leader.png" alt="Leader" class="img-fluid imgcomp">
+          <label class="l1">Employees</label>
+          <label class="l2">Over <b>350</b> employees</label>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-group">
+        <div class="form-group">
+          <div class="form-group d-flex flex-column">
+            <img src ="Image\cooperation.png" alt="Cooperation" class="img-fluid imgcomp">
+            <label class="l1">Projects</label>
+            <label class="l2">Over <b>5000</b> project based employment</label>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div id ="Footer"class="container-fluid">
+  <div class="footer">
+    <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <img src="Image\tel.png" class="img-fluid imgtel">
+        <label class="l1">+632 5277070</label>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group float-right social-media">
+        <label class="l2">FOLLOW US ON SOCIAL MEDIA</label>
+        <img src="Image\facebook.png" class="img-fluid">
+        <img src="Image\linkedin.png" class="img-fluid">
+        <img src="Image\google-plus.png" class="img-fluid">
+      </div>
+    </div>
+    <hr>
+    </div>
+    <div class="form-group">
+        <p class="p1">Mary Bachrach Building Ground Floor Corner 25th & Railroad Streets, Port Area, Manila, Philippines 1018
+        © 2019 VelcoAsia. All rights reserved. Privacy Policy Terms of Use</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

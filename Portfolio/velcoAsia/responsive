@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>
+      responsive
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="Scripts\jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="Content\bootstrap.min.css" />
+    <script src="Scripts\bootstrap.min.js"></script>
+  </head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-6">
+        <p> asddddddasdasdasdasdasdasdasdasdasdasdasdasdasfasnfklasnflkasnklasnaslnglasngasgasgas
+        gasgasgasgasgaskgkalsgklasngklasnglanmgasgasgasgasgioasdgkldmgaosdgsognasdiojnasdkl=gadfoasf</p>
+      </div>
+      <div class="col-xs-6">
+        <p> asddddddasdasdasdasdasdasdasdasdasdasdasdasdasfasnfklasnflkasnklasnaslnglasngasgasgas
+        gasgasgasgasgaskgkalsgklasngklasnglanmgasgasgasgasgioasdgkldmgaosdgsognasdiojnasdkl=gadfoasf</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

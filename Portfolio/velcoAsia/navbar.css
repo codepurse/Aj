@@ -1,0 +1,32 @@
+  .navbar a {
+  color: #2E3548 !important;
+  font-weight: 400;
+  font-family: Segoe ui semibold;
+  margin-left: 9px;
+  }
+.navbar{
+-webkit-box-shadow: 0 8px 6px -6px #999;
+-moz-box-shadow: 0 8px 6px -6px #999;
+box-shadow: 0 8px 6px -6px #999;
+}
+.navbar-brand img{
+height: 20px;
+}
+.bgcolor{
+background-color: white;
+}
+.nav > li > a:hover{
+color:#4494F9 !important;
+cursor: pointer;
+}
+.btncontact{
+color: #494949 !important;
+text-transform: uppercase;
+background: #ffffff;
+padding: 4px;
+border: 2px solid  #525252   !important;
+border-radius: 4px;
+display: inline-block;
+font-family: Segoe ui semibold;
+margin-left: 10px;
+}

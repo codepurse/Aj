@@ -1,0 +1,192 @@
+html,body{
+  height: :100%;
+  width:100%;
+}
+/* landing page */
+
+#Home1{
+  height:100%;
+  width: auto;
+  margin: auto;
+}
+.vertical-align{
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+#home1 .l1{
+  font-size: 50px;
+  font-family: Tahoma;
+  color:#2E3548;
+  margin: auto;
+  font-weight: 600;
+}
+#home1 .l2{
+  font-size: 17px;
+  font-family: Segoe ui Semilight;
+  color:#424242;
+  margin: auto;
+  margin-top: 20px;
+}
+
+/* Home 2*/
+.borderless td, .borderless tr {
+border: none;
+}
+
+#home2{
+display: table;
+height: auto;
+width: 100%;
+margin: auto;
+margin-top: 24px;
+}
+#imgclass2{
+  width: 90%;
+  margin: auto;
+}
+.Contact{
+  font-family: Segoe ui Semibold;
+  font-weight:600;
+  color: #434B55;
+}
+.home2p1{
+  font-family: Segoe ui;
+  color:#484848;
+  font-weight: 400;
+}
+.btnsubmit{
+  margin: auto;
+  color: Whitesmoke;
+  background:  #4373f9 ;
+  padding: 13px 40px 13px 40px;
+  border-radius: 5px;
+  border: none;
+  font-family: Segoe ui Semibold;
+  box-shadow: 0px 5px 10px #4373f9;
+  cursor:pointer;
+}
+
+#Home3 .container .col-md-4{
+margin-top: 10px;
+}
+.home3p1{
+  font-family: Segoe ui Semibold;
+  font-weight:600;
+  color: #434B55;
+  font-size:30px;
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+#home3 .container .p1{
+  font-family: Segoe ui Semilight;
+  color:#484848;
+  font-weight: 400;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 17px;
+  line-height: 1.6;
+}
+#home3 .container .p2{
+  font-family: Segoe ui Semilight;
+  color:#3d3c3c;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 30px;
+  justify-content:center;
+}
+.imgcomp{
+  width: 25%;
+  margin: auto;
+}
+#home3 .container .col-md-4 .l1{
+  text-align: center;
+  font-family: Segoe ui Semibold;
+  color: #434B55;
+  margin-top:12px;
+  font-size:18px;
+}
+#home3 .container .col-md-4 .l2{
+  text-align: center;
+  font-size: 15px;
+  font-family: Segoe ui;
+  color:#3d3c3c;
+}
+
+#home4{
+  margin-top:54px;
+}
+#home4 .row .form-group .l1{
+  font-family: Segoe ui Semibold;
+  color:#484848;
+  font-weight: 400;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  font-size: 25px;
+  line-height: 1.6;
+}
+.card-img-top{
+  width: 40%;
+}
+.card:hover{
+  transform: translateY(-7px);
+  transition: all 0.2s ease 0s;
+}
+#home4 .form-group .p1{
+  text-align: center;
+  color: #434B55;
+  font-family: Segoe ui Semibold;
+  font-size: 28px;
+  margin-top: 10px;
+}#home4 .form-group .p2{
+  text-align: center;
+  color: #434B55;
+  font-family: Segoe ui;
+  font-size: 20px;
+  margin-top: 5px;
+}
+/* Footer */
+.footer{
+  padding: 50px;
+  margin-top: 20px;
+}
+.footer .l1{
+  font-family: Segoe ui Semibold;
+  color: #434B55;
+  font-size: 17px;
+  margin-top: 2px;
+}
+.footer .l2{
+  font-family: Segoe ui Semibold;
+  color: #434B55;
+  font-size: 13px;
+  margin-top: 2px;
+  margin-right: 5px;
+}
+.social-media .img-fluid{
+  margin-right: 5px;
+}
+hr {
+    padding: 0;
+    margin: 8px auto;
+    height: 0;
+    width: 100%;
+    max-height: 0;
+    font-size: 1px;
+    line-height: 0;
+    clear: both;
+    border: none;
+    border-top: 1px solid #aaaaaa;
+    border-bottom: 1px solid #ffffff;
+ }
+ .footer .p1{
+   font-family: Segoe ui Semibold;
+   color: #434B55;
+   font-size: 13px;
+   text-align: center;
+   margin-top: 2px;
+   margin-right: 5px;
+ }
