@@ -1,0 +1,184 @@
+@media only screen and (min-width : 1200px) {
+    .container { max-width: 1400px !important; } 
+}
+body,html {
+	width: 100%;
+	height: auto;
+}
+.container {
+	
+}
+.maincontainer {
+	height: 100vh !important;
+	background: linear-gradient(
+                     rgba(1,11,11, 0), 
+                     rgba(11,11,11, 0.7)),
+                     url('../Image/birdeye.jpg');
+    background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: background-color 0.2s ease-in-out;
+	object-fit: cover;
+}
+
+.lbltake {
+	color:transparent;
+	font-family: Mont DEMO;
+	font-weight: bold;
+	font-size: 80px;
+	color:transparent;
+	-webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+    line-height: 40px;
+    text-align: center;
+}
+.lblexplore {
+	color:white;
+	font-family: Mont DEMO;
+	font-size:85px;
+	text-align:center;
+	font-weight: bold;
+}
+.lblbottom {
+	padding-top: 20px;
+	color:white;
+	font-family: muli;
+	font-size: 15px;
+}
+.wrapper {
+	display: inline-block;
+	position: relative;
+}
+.imgrowbot {
+	transition: 0.5s;
+	cursor: pointer;
+}
+.imgrowbot:hover {
+	-webkit-filter: brightness(50%);
+	-moz-filter: brightness(50%);
+	-o-filter: brightness(50%);
+	-ms-filter: brightness(50%);
+	filter: brightness(50%)
+}
+
+.txtsearch {
+    box-sizing: border-box;
+    border:1px solid #ccc;
+    font-size: 16px;
+    background-size:20px;
+    background-position: 0px 10px; 
+    background-repeat: no-repeat;
+    padding: 7px 20px 7px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    background-image: url('../Image/search.png');
+    border:0px;
+    border-bottom: 2px solid #232323;
+    width:300px;
+    background-color: transparent;
+    color:#232323;
+}
+.btnclose {
+	margin-top:10px;
+	border:0px;
+	background-color: transparent;
+	cursor:pointer;
+}
+.imgcol2 {
+	transition: all .2s ease-in-out;
+	z-index: 9998!important;
+	filter: brightness(100%);
+	cursor: pointer;
+}
+.imgcol2:hover {
+	transform: scale(1.2);
+	z-index: 9998!important;
+	filter: brightness(50%)
+}
+.lblcol2text {
+	color:white;
+	font-family: biko;
+	font-weight: bold;
+	font-size: 20px;
+	position:absolute;
+	top:40%;
+	z-index: 9998!important;
+	transition: font-size 0.9s;
+	transition: all .2s ease-in-out;
+	cursor: pointer;
+}
+.btncol2 {
+	color:#424242;
+	font-family: muli;
+	font-size: 15px;
+	position: absolute;
+	top:50%;
+	left: 24%;
+	z-index: 9998!important;
+	border:0px;
+	background-color: #f2f2f2;
+	padding: 5px 20px 5px 20px;
+	border-radius: 50px;
+	visibility: hidden;
+}
+
+.lbldiscover {
+	font-family: Mont DEMO;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+
+.lblwhytravel {
+	color:#424242;
+	font-family: Madeleina Sans;
+	font-size: 35px;
+}
+hr {
+	margin-top: -5px;
+	height: 1px;
+	width: 5%;
+	background-color: #f44336;
+}
+.lblwhytravelsub {
+	width: 50%;
+	color:#424242;
+	font-family: Madeleina Sans;
+	font-size: 20px;
+	font-style: italic;
+}
+.imgprofile {
+	object-fit: cover;
+  	border-radius:50%;
+  	width: 70px;
+  	height: 70px;
+  	margin-top: 20px;
+}
+.lblimgprofilename {
+	color:#424242;
+	font-size: 12px;
+	font-family: muli;
+	font-weight: bold;
+	margin-top: 10px;
+}
+.lblimgprofilepos {
+	color:#424242;
+	font-size: 12px;
+	font-family: muli;
+	font-style: italic;
+	margin-top: -5px;
+}
+.lbluseful {
+	font-family: Mont DEMO;
+	font-size: 25px;
+	color: #424242;
+	font-weight: bold;
+}
+.lblusefultips {
+	font-family: Mont DEMO;
+	font-size: 16px;
+	color: #424242;
+}
+
+
+

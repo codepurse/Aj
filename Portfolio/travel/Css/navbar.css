@@ -1,0 +1,11 @@
+.navbar img {
+	width: 40px;
+	margin-top: 0px;
+}
+.navbar-text {
+	color:white;
+	font-family: biko;
+	font-weight: bold;
+	font-size: 23px;
+	margin-left: 10px;
+}

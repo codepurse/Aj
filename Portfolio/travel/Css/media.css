@@ -1,0 +1,23 @@
+@media screen and (max-width: 414px) {
+  .try {
+    margin-top: -140px !important;
+  }
+  .lbltake {
+    font-size: 40px;
+  }
+  .lblexplore {
+    font-size: 40px;
+  }
+  .imgrowbot {
+    width: 140px !important;
+  }
+  .lblwhytravelsub {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .lblwhytravelsub {
+    width: 100%;
+  }
+}
