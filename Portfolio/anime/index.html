@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+		<link rel="stylesheet" type="text/css" href="Css/index.css">
+		<script src="Script\jquery-3.3.1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="Css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="Css/media.css">
+		<link rel="stylesheet" type="text/css" href="Css/font.css">
+		<script src="Script\bootstrap.min.js"></script>
+		<title>Anime</title>
+	</head>
+<body>
+	<div class="container-fluid maincontainer">
+		<div class="container h-100">
+				<nav class="navbar navbar-expand-md">
+	              	<button class="navbar-toggler" data-toggle="navbar-collapse" data-target="#collapse">
+	               	 <span class="navbar-toggler-icon"></span>
+	              	</button>
+	             	<nav class="navbar-brand" href="#">
+	      				<a href="#"><img src="Image/saga.png" class="img-fluid"></a>
+	        			<span style="margin-left: 5px;color:white">Animesaga</span>
+	      		  	</nav>
+	            <div class="collapse navbar-collapse" id="collapse">
+	              <div class="col2 ml-auto">
+	                <ul class="nav navbar-nav">
+	                	<li><a class="nav-link btnanime" style="margin-right: 20px;">Anime</a></li>
+	                	<li><a class="nav-link btnlogin" style="margin-right: 20px;">Login</a></li>
+	                    <li><a class="nav-link btnaccount" target="_self">Account</a></li> 
+	                </ul>
+	              </div>
+	            </div>
+	          </nav>
+	        <div class="row d-flex align-items-center h-100">
+	         	<div class="col-lg-9" style="margin-top:-5%;">
+	         		<label class="lblnew">New Episode</label><br>
+	         		<label class="lblanimetitle">Clannad: After Story</label><br>
+	         		<label class="lblnow">Now Available</label><br>
+	         		<label class="lbldescription">Clannad: After Story, the sequel to the critically acclaimed slice-of-life series Clannad, begins after Tomoya Okazaki and Nagisa Furukawa graduate
+	         			rom high school. Together, they experience the emotional rollercoaster of growing up. Unable to decide on a course for his future, Tomoya learns the value of a strong work ethic
+	         			and discovers the strength of Nagisa's support. Through the couple's dedication and unity of purpose, they push forward to confront their personal problems, deepen their old
+	         			relationships, and create new bonds.
+	         		</label><br>
+	         		<button class="btnwatch">Watch Now</button>
+	         	</div>
+	        </div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="container" style="margin-top: 40px">
+			<div class="row">
+				<div class="col-lg-7">
+					<label class="lbltrending">Trending Anime</label><br>
+					<div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
+					  <div class="carousel-inner">
+					    <div class="carousel-item active">
+					      <img class="d-block w-100 " src="Image/bg1.jpg" alt="First slide" style="cursor: pointer;">
+					      <div class="img1label">
+					      	<label class="lblimgname">Sword Art Online</label><br>
+					      	<img src="Image/star.png" class="img-fluid imgname"><img src="Image/star.png" class="img-fluid imgname"><img src="Image/star.png" class="img-fluid imgname"><img src="Image/star.png" class="img-fluid imgname"><br>
+					      	<label class="lblimgdetails">In the year 2022, virtual reality has progressed by leaps and bounds, and a massive online role-playing game called Sword Art Online (SAO) is launched. With the aid of "NerveGear" technology, 
+					      	players can control their avatars within the game using nothing but their own thoughts.</label>
+					      </div>
+					    </div>
+					    <div class="carousel-item">
+					      <img class="d-block w-100" src="Image/bg2.jpg" alt="Second slide" style="cursor: pointer;">
+					      <div class="img1label">
+					      	<label class="lblimgname">Dororo</label><br>
+					      	<img src="Image/star.png" class="img-fluid imgname"><img src="Image/star.png" class="img-fluid imgname"><img src="Image/star.png" class="img-fluid imgname"><img src="Image/star.png" class="img-fluid imgname"><img src="Image/star.png" class="img-fluid imgname"><br>
+					      	<label class="lblimgdetails">A samurai lord has bartered away his newborn son's organs to forty-eight demons in exchange for dominance on the battlefield. Yet, the abandoned infant survives thanks to a medicine man who equips him with primitive prosthetics—lethal ones with which the wronged son will use to hunt down the multitude of demons to reclaim his body one piece at a time, before confronting his father.
+					      	 On his journeys the young hero encounters an orphan who claims to be the greatest thief in Japan. </label>
+					      </div>
+					    </div>
+					    <div class="carousel-item">
+					      <img class="d-block w-100" src="Image/bg3.png" alt="Third slide" style="cursor: pointer;">
+					      <div class="img1label">
+					      	<label class="lblimgname">Tate no Yuusha no Nariagari</label><br>
+					      	<img src="Image/star.png" class="img-fluid imgname"><img src="Image/star.png" class="img-fluid imgname"><img src="Image/star.png" class="img-fluid imgname"><img src="Image/star.png" class="img-fluid imgname"><br>
+					      	<label class="lblimgdetails">Stories of old tell of four otherworldly heroes—wielding the sword, spear, bow, and shield—who defended the land from wave after wave of calamity. With the fate of the world in balance, the kingdom of Melromarc summons these legendary figures; 
+					      	in modern-day Japan, the call is answered, and the unwitting heroes are transported to this fantasy universe.</label>
+					      </div>
+					    </div>
+					  </div>
+					  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+					    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Previous</span>
+					  </a>
+					  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+					    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Next</span>
+					  </a>
+					</div>
+				</div>
+				<div class="col-lg-5 animeoftheweek">
+					<label class="lbltrending">Anime of the week</label><br>
+					<div class="row">
+						<div class="col-lg-4 col-12">
+							<div class="imghover">
+								<img src="Image/img1.jpg" class="img-fluid imgweek" style="width: 150px;">
+							</div>
+						</div>
+						<div class="col-lg-8 col-12 imgweekdescription" style="line-height: 12px;">
+							<label style="font-family: muli;font-weight:bold;font-size: 15px;color:#212121">Utawarerumono: Itsuwari</label><br>
+							<label style="font-family: muli;font-size: 14px;"><b>Status:</b> On going</label><Br>
+							<label style="font-family: muli;font-size: 14px;"><b>Released Year:</b> 2014</label><Br>
+							<label style="font-family: muli;font-size: 14px;"><b>Duration:</b> 22min per episode</label>
+						</div>
+					</div>
+					<div class="row" style="margin-top:22px">
+						<div class="col-lg-4 col-12">
+							<img src="Image/img2.jpg" class="img-fluid imgweek" style="width: 150px;">
+						</div>
+						<div class="col-lg-8 col-12 imgweekdescription" style="line-height: 12px;">
+							<label style="font-family: muli;font-weight:bold;font-size: 14px;color:#212121">Mononoke Hime</label><br>
+							<label style="font-family: muli;font-size: 14px;"><b>Status:</b> On going</label><Br>
+							<label style="font-family: muli;font-size: 14px;"><b>Released Year:</b> 2014</label><Br>
+							<label style="font-family: muli;font-size: 14px;"><b>Duration:</b> 22min per episode</label>
+						</div>
+					</div>
+					<div class="row" style="margin-top:22px">
+						<div class="col-lg-4 col-12">
+							<img src="Image/img3.jpg" class="img-fluid imgweek" style="width: 150px;">
+						</div>
+						<div class="col-lg-8 col-12 imgweekdescription" style="line-height: 12px;">
+							<label style="font-family: muli;font-weight:bold;font-size: 14px;color:#212121">Mushishi Zoku Shou</label><br>
+							<label style="font-family: muli;font-size: 14px;"><b>Status:</b> On going</label><Br>
+							<label style="font-family: muli;font-size: 14px;"><b>Released Year:</b> 2014</label><Br>
+							<label style="font-family: muli;font-size: 14px;"><b>Duration:</b> 22min per episode</label>
+						</div>
+					</div>
+					<div class="row" style="margin-top:22px">
+						<div class="col-lg-4 col-12">
+							<img src="Image/img4.jpg" class="img-fluid imgweek" style="width: 150px;">
+						</div>
+						<div class="col-lg-8 col-12 imgweekdescription" style="line-height: 12px;">
+							<label style="font-family: muli;font-weight:bold;font-size: 14px;color:#212121">Howl no Ugoku Shiro</label><br>
+							<label style="font-family: muli;font-size: 14px;"><b>Status:</b> On going</label><Br>
+							<label style="font-family: muli;font-size: 14px;"><b>Released Year:</b> 2014</label><Br>
+							<label style="font-family: muli;font-size: 14px;"><b>Duration:</b> 22min per episode</label>
+						</div>
+					</div
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="container" style="padding-top: 30px;">
+			<div class="row">
+				<div class="col-lg-12">
+					<label class="lbltrending">Recent News</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 col-sm-12">
+					<div class="card-deck">
+					  <div class="card">
+				
+					    	<img class="card-img-top imgnews" src="Image/news.jpg" alt="Card image cap">
+			
+					    <div class="card-body">
+					      <h5 class="card-title">One Punch Man: Season 2</h5>
+					      <p class="card-text">One-Punch Man season two will debut sometime in April 2019, though it isn’t clear yet what platforms and streaming services it will be available on.</p>
+					    <small class="lblcontinue">Continue Reading</small>
+					    </div>
+					    <div class="card-footer">
+					    <img src="Image/envelope.png" class="img-fluid" style="width: 18px">
+					     <small class="lblcomment"> 23 Comments</small>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <img class="card-img-top" src="Image/bg1.jpg" alt="Card image cap">
+					    <div class="card-body">
+					      <h5 class="card-title">SwordArt Online</h5>
+					      <p class="card-text">The official website of Sword Art Online: Alicization announced additional staff on Saturday. Aniplex also revealed the first promotional video for the anime. Directed by Manabu Ono (Mahouka Koukou no Rettousei) at A-1 Pictures.</p>
+					    <small class="lblcontinue">Continue Reading</small>
+					    </div>
+					    <div class="card-footer">
+					      <img src="Image/envelope.png" class="img-fluid" style="width: 18px">
+					     <small class="lblcomment"> 23 Comments</small>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <img class="card-img-top" src="Image/news1.png" alt="Card image cap">
+					    <div class="card-body">
+					      <h5 class="card-title">Shingeki no Kyojin Gets 3rd Season</h5>
+					      <p class="card-text">Upon the broadcast of Shingeki no Kyojin Season 2's final episode, it was announced that the Shingeki no Kyojin TV anime series will get a third season in 2018.</p>
+					    	<small class="lblcontinue">Continue Reading</small>
+					    </div>
+					    <div class="card-footer">
+					     <img src="Image/envelope.png" class="img-fluid" style="width: 18px">
+					     <small class="lblcomment"> 23 Comments</small>
+					    </div>
+					  </div>
+					  <div class="card">
+					    <img class="card-img-top" src="Image/news2.jpg" alt="Card image cap">
+					    <div class="card-body">
+						     <h5 class="card-title">Noragami: Agato</h5>
+						     <p class="card-text">Noragami's official website has announced additional cast, along with their character designs, for the upcoming sequel produced by studio Bones. The cast and staff members from the first season will be reprising their roles.</p>
+						    <small class="lblcontinue">Continue Reading</small>
+					    </div>
+					    <div class="card-footer">
+					      <img src="Image/envelope.png" class="img-fluid" style="width: 18px">
+					     <small class="lblcomment"> 23 Comments</small>
+					    </div>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="container" style="margin-top: 40px;">
+			
+			<div class="row" style="margin-left: 0px;">
+				<div class="col-lg-9" >
+					<div class="row" >
+						<div class="col-lg-12"  style="padding:0px !important">
+							<label class="lbltrending">Latest Reviews</label>
+							<label style="font-family: muli;font-size: 15px;color:#8f8f91;cursor: pointer;" class="float-right">View all</label>
+						</div>
+					</div>
+					<div class="row">
+						<div clas="col-lg-4">
+							<div class="tint">
+								<img src="Image/rev1.png" class="img-fluid imgrev" style="width: 300px;">
+							</div>
+						</div>
+						<div class="col-lg-8 colreview">
+							<div style="margin-top:-10px;">
+								<label style="font-family: muli;color: #FFAB00;line-height: 10px;">Review</label><br>
+								<label style="font-family: muli;font-size: 15px;font-weight: bold;line-height: 10px;">Kimi no Na wa (Your Name)</label><br>
+								<img src="Image/star.png" style="width: 15px" class="img-fluid">
+								<img src="Image/star.png" style="width: 15px" class="img-fluid">
+								<img src="Image/star.png" style="width: 15px" class="img-fluid">
+								<img src="Image/star.png" style="width: 15px" class="img-fluid">
+								<img src="Image/star.png" style="width: 15px" class="img-fluid"><br>
+								<label style="font-family: muli;font-size: 14px;color:#424242" class="b">The film holds true to all the expectations of a Makoto Shinkai production, from heartfelt smiles to crying the 5th time within the last 30 minutes. His signature metaphorical use of trains, the idea of a hopeless and distant love, and beautiful scenery really dive you emotionally into the story, even for how generic and simple it may seem.</label><br>
+								<label style="font-family: muli;font-size: 13px;color:#424242">December 21, 2018 by <span style="color:#FFAB00;font-weight:bold">Joed Echon</span></label>
+							</div>
+						</div>
+					</div>
+					<div class="row"  style="margin-top:20px;">
+						<div clas="col-lg-4">
+							<div class="tint">
+								<img src="Image/rev2.jpg" class="img-fluid imgrev" style="width: 300px;">
+							</div>
+						</div>
+						<div class="col-lg-8 colreview">
+							<div style="margin-top:-10px;">
+								<label style="font-family: muli;color: #FFAB00;line-height: 10px;">Review</label><br>
+								<label style="font-family: muli;font-size: 15px;font-weight: bold;line-height: 10px;">Seven Deadly Sins</label><br>
+								<img src="Image/star.png" style="width: 15px" class="img-fluid">
+								<img src="Image/star.png" style="width: 15px" class="img-fluid">
+								<img src="Image/star.png" style="width: 15px" class="img-fluid">
+								<img src="Image/star.png" style="width: 15px" class="img-fluid"><br>
+								<label style="font-family: muli;font-size: 14px;color:#424242" class="b">My experience of this anime can be summed up by the word "meh". I went into it hoping for a nice twist on the seven deadly sins being the good guys, and some awesome fight scenes, and ended up sorely disappointed. Sure, the characters are known by their sins, but rather than be actual embodiments of said sins, they were simply granted them as derogatory titles, so they fail to stand out as shounen manga characters in that department.</label><br>
+								<label style="font-family: muli;font-size: 13px;color:#424242;padding-top: -20px;">December 21, 2018 by <span style="color:#FFAB00;font-weight:bold">Bill Gates</span></label>
+							</div>
+						</div>
+					</div>
+					<div class="row"  style="margin-top:5px;">
+						<div clas="col-lg-4">
+							<div class="tint">
+								<img src="Image/bg5.jpg" class="img-fluid imgrev" style="width: 300px;">
+							</div>
+						</div>
+						<div class="col-lg-8 colreview">
+							<div style="margin-top:-10px;">
+								<label style="font-family: muli;color: #FFAB00;line-height: 10px;">Review</label><br>
+								<label style="font-family: muli;font-size: 15px;font-weight: bold;line-height: 10px;">Koe no Katachi</label><br>
+								<img src="Image/star.png" style="width: 15px" class="img-fluid">
+								<img src="Image/star.png" style="width: 15px" class="img-fluid">
+								<img src="Image/star.png" style="width: 15px" class="img-fluid">
+								<img src="Image/star.png" style="width: 15px" class="img-fluid"><br>
+								<label style="font-family: muli;font-size: 14px;color:#424242" class="b">koe no Katachi is dangerous because it is exploitative. I'm not going to pretend to know anything about deaf people. I don't. This movie certainly does not allow any greater understanding into the mind of deaf people is the point I want to iterate. It uses a serious problem as a plot device constantly and reduces Nishimiya to one-dimension. She is the textbook definition of a mary-sue as well as a damsel in distress. This is clearly troublesome when trying to explain deafness to an able-bodied audience.</label><br>
+								<label style="font-family: muli;font-size: 13px;color:#424242" style="margin-top:">December 21, 2018 by <span style="color:#FFAB00;font-weight:bold">Gon</span></label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="row">
+						<div class="col-lg-8 col-7" >
+							<label class="lbltrending">Top Anime of all time</label>
+						</div>
+						<div class="col-lg-4 col-5">
+							<label class="lbltrending float-right" style="color: #8f8f91;font-weight: normal;cursor: pointer;">View All</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-4 col-4">
+							<img src="Image/gintama.jpg" class="img-fluid" style="width: 80px;">
+						</div>
+						<div class="col-lg-8 col-7 coltopanime" style="padding:0px;line-height: 14px;padding-left: 15px;">
+							<label style="font-family: muli;color:#8f8f91;font-size: 12px;">Action, Adventure</label><br>
+							<label style="font-family: muli;color:#212121;font-size: 15px;font-weight: bold;">Gintama</label><br>
+							<div style="padding-bottom: 7px;">
+								<img src="Image/star.png" style="width: 15px;">
+								<img src="Image/star.png" style="width: 15px;">
+								<img src="Image/star.png" style="width: 15px;">
+								<img src="Image/star.png" style="width: 15px;">
+								<img src="Image/star.png" style="width: 15px;"><br>
+							</div>
+							<label style="font-family: muli;font-size: 13px;color:#8f8f91"><b style="color:#212121">Status:</b> Finished</label><br>
+							<label style="font-family: muli;font-size: 13px;color:#8f8f91"><b style="color:#212121">Duration:</b> 24mins per episode</label>
+						</div>
+					</div>
+					<div class="row" style="margin-top: 10px;">
+						<div class="col-lg-4 col-4">
+							<img src="Image/steins.jpg" class="img-fluid" style="width: 80px;">
+						</div>
+						<div class="col-lg-8 col-7 coltopanime" style="padding:0px;line-height: 14px;padding-left: 15px;">
+							<label style="font-family: muli;color:#8f8f91;font-size: 12px;">Sci-fi, Thriller</label><br>
+							<label style="font-family: muli;color:#212121;font-size: 15px;font-weight: bold;">Steins;Gate</label><br>
+							<div style="padding-bottom: 7px;">
+								<img src="Image/star.png" style="width: 15px;">
+								<img src="Image/star.png" style="width: 15px;">
+								<img src="Image/star.png" style="width: 15px;">
+								<img src="Image/star.png" style="width: 15px;">
+								<img src="Image/star.png" style="width: 15px;"><br>
+							</div>
+							<label style="font-family: muli;font-size: 13px;color:#8f8f91"><b style="color:#212121">Status:</b> Finished</label><br>
+							<label style="font-family: muli;font-size: 13px;color:#8f8f91"><b style="color:#212121">Duration:</b> 24mins per episode</label>
+						</div>
+					</div>
+					<div class="row" style="margin-top: 10px">
+						<div class="col-lg-4 col-4">
+							<img src="Image/hunter.jpg" class="img-fluid" style="width: 80px;">
+						</div>
+						<div class="col-lg-8 col-7 coltopanime" style="padding:0px;line-height: 14px;padding-left: 15px;">
+							<label style="font-family: muli;color:#8f8f91;font-size: 12px;">Action, Adventure</label><br>
+							<label style="font-family: muli;color:#212121;font-size: 15px;font-weight: bold;">Hunter x Hunter</label><br>
+							<div style="padding-bottom: 7px;">
+								<img src="Image/star.png" style="width: 15px;">
+								<img src="Image/star.png" style="width: 15px;">
+								<img src="Image/star.png" style="width: 15px;">
+								<img src="Image/star.png" style="width: 15px;">
+								<img src="Image/star.png" style="width: 15px;"><br>
+							</div>
+							<label style="font-family: muli;font-size: 13px;color:#8f8f91"><b style="color:#212121">Status:</b> Finished</label><br>
+							<label style="font-family: muli;font-size: 13px;color:#8f8f91"><b style="color:#212121">Duration:</b> 24mins per episode</label>
+						</div>
+					</div>
+					<div class="row" style="margin-top: 10px;">
+						<div class="col-lg-4 col-4">
+							<img src="Image/clannad.jpg" class="img-fluid" style="width: 80px;">
+						</div>
+						<div class="col-lg-8 col-7 coltopanime" style="padding:0px;line-height: 14px;padding-left: 15px;">
+							<label style="font-family: muli;color:#8f8f91;font-size: 12px;">Supernatural, Drama</label><br>
+							<label style="font-family: muli;color:#212121;font-size: 15px;font-weight: bold;">Clannda: After Story</label><br>
+							<div style="padding-bottom: 7px;">
+								<img src="Image/star.png" style="width: 15px;">
+								<img src="Image/star.png" style="width: 15px;">
+								<img src="Image/star.png" style="width: 15px;">
+								<img src="Image/star.png" style="width: 15px;"><br>
+							</div>
+							<label style="font-family: muli;font-size: 13px;color:#8f8f91"><b style="color:#212121">Status:</b> Finished</label><br>
+							<label style="font-family: muli;font-size: 13px;color:#8f8f91"><b style="color:#212121">Duration:</b> 24mins per episode</label>
+						</div>
+					</div>
+					<div class="row" style="margin-top: 10px;">
+						<div class="col-lg-4 col-4">
+							<img src="Image/made.jpg" class="img-fluid" style="width: 80px;">
+						</div>
+						<div class="col-lg-8 col-7 coltopanime" style="padding:0px;line-height: 14px;padding-left: 15px;">
+							<label style="font-family: muli;color:#8f8f91;font-size: 12px;">Mystery, Fantasy</label><br>
+							<label style="font-family: muli;color:#212121;font-size: 15px;font-weight: bold;">Made in Abbys</label><br>
+							<div style="padding-bottom: 7px;">
+								<img src="Image/star.png" style="width: 15px;">
+								<img src="Image/star.png" style="width: 15px;">
+								<img src="Image/star.png" style="width: 15px;">
+								<img src="Image/star.png" style="width: 15px;"><br>
+							</div>
+							<label style="font-family: muli;font-size: 13px;color:#8f8f91"><b style="color:#212121">Status:</b> Finished</label><br>
+							<label style="font-family: muli;font-size: 13px;color:#8f8f91"><b style="color:#212121">Duration:</b> 24mins per episode</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="container text-center" style="margin-top: 100px;">
+			<div class="row">
+				<div class="col-lg-12">
+					<img src="Image/saga.png" class="img-fluid" style="width: 40px;"><br>
+					<label style="font-family: Coolvetica;font-size: 25px;color:#424242;margin-top:10px;">Animesaga</label><Br>
+					<label style="font-family: muli;"><span class="f1">Anime</span><span class="f2">Movie</span><span class="f3">Manga</span><span class="f4">Community</span></label>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid footer">
+		<div class="row">
+	
+	</div>
+</body>
+</html>

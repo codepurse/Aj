@@ -1,0 +1,36 @@
+@media screen and (max-width: 414px) {
+	.lblnew {
+		font-size: 15px;
+	}
+	.lblanimetitle {
+		font-size: 35px;
+	}
+	.lblnow {
+		font-size: 35px;
+	}
+	.lbldescription {
+		font-size: 15px;
+	}
+	.animeoftheweek {
+		margin-top: 20px;
+	}
+	.imgweek {
+		width: auto !important;
+	}
+	.imgweekdescription {
+		margin-top: 10px;
+		text-align: center;
+		vertical-align: middle;
+	}
+	.colreview {
+		margin-top: 20px;
+		text-align: left;
+		padding-left: 0px !important;
+	}
+	.imgrev {
+		width: auto !important;
+	}
+	.coltopanime {
+		padding-left: 0px;
+	}
+}

@@ -1,0 +1,20 @@
+@font-face {
+	font-family: "muli";
+	src: url("../Font/Muli/muli/Muli.ttf");
+}
+@font-face {
+	font-family: "mulibold";
+	src: url("../Font/Muli/muli/Muli_Bold.ttf");
+}
+@font-face {
+	font-family: "Biko";
+	src: url("../Font/biko/Biko_Regular.otf");
+}
+@font-face {
+	font-family: "BikoBold";
+	src: url("../Font/biko/Biko_Bold.otf");
+}
+@font-face {
+	font-family: "Coolvetica";
+	src: url("../Font/coolvetica/coolvetica_rg.ttf");
+}

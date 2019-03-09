@@ -1,0 +1,240 @@
+@media screen and (min-width: 1200px) {
+	.container {
+		max-width: 1300px !important;
+	}
+}
+html, body {
+	width: 100%;
+	height: auto;
+}
+.maincontainer {
+	height: 100vh;
+	background: url('../Image/bg.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+/* Navbar */
+.btnaccount {
+	color: white !important;
+	padding: 9px 20px 11px 20px !important;
+	background-color: #FFAB00;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.btnaccount:hover {
+	background-color: #FFC400 !important;
+}
+.btnanime, .btnlogin {
+	cursor: pointer;
+	color: white !important;
+}
+.btnanime:hover, .btnlogin:hover {
+	color: #FFAB00 !important;
+}
+.navbar-brand img {
+	width: 40px;
+}
+.lblnew {
+	font-family: BikoBold;
+	font-weight: bold;
+	color: white;
+	font-size: 20px;
+	line-height: 10px;
+}
+.lblanimetitle {
+	font-family: BikoBold;
+	font-weight: bold;
+	color: white;
+	font-size: 50px;
+}
+.lblnow {
+	font-family: BikoBold;
+	font-weight: bold;
+	color: rgb(255, 171, 0,0.7);
+	font-size: 45px;
+	line-height: 20px;
+}
+.lbldescription {
+	margin-top:20px;
+	font-family: Biko;
+	font-size: 17px;
+	color: rgba(202, 204, 206,0.9);
+}
+.btnwatch {
+	color: #FFAB00;
+	background-color: transparent;
+	border:2px solid #FFAB00;
+	padding: 5px 19px 5px 19px;
+	cursor: pointer;
+	font-family: Biko;
+	transition: all 0.2s;
+	border-radius: 3px;
+}
+.btnwatch:hover {
+	background-color: #FFAB00;
+	color: white;
+}
+.lbltrending {
+	color: #313131;
+	font-family: muli;
+	font-weight: bold;
+	font-size: 17px;
+	padding-bottom: 10px;
+	letter-spacing: -1px;
+}
+.img1label {
+	position: absolute;
+	z-index: 20;
+	color:white;
+	background-color: rgba(0,0,0,0.7);
+	top:73%;
+	height: auto;
+	left: 0%;
+	width: 100%;
+}
+.lblimgname {
+	left: 2%;
+	position: relative;
+	font-size: 15px;
+	font-family: muli;
+	font-weight: bold;
+	width: 90% !important;
+	line-height: 0px;
+}
+.imgname {
+	left: 2%;
+	position: relative;
+	width: 15px;
+	margin-right: 5px !important;
+	padding-bottom: 5px !important;
+}
+.lblimgdetails {
+	left: 2%;
+	position: relative;
+	font-size: 13px;
+	width: 95%;
+}
+.imgweek {
+	transition: all 0.2s;
+	cursor: pointer;
+}
+.imgweek:hover {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	filter: brightness(40%);
+}
+.card-title {
+	font-family: muli;
+	font-weight: bold;
+	font-size: 15px;
+}
+.card-text {
+	font-family: muli;
+	font-size: 14px;
+	color: #424242;
+}
+.lblcontinue{
+	font-family: muli;
+	color: #FFAB00 !important;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+.lblcontinue:hover {
+	color: #FFC400  !important;
+	text-decoration: underline;
+}
+.lblcomment {
+	font-family: muli;
+	color:#424242;
+	font-size: 12px;
+	margin-top: 7px;
+}
+.test {
+	background-color: black;
+	cursor: pointer;
+}
+
+.imgrev {
+
+	cursor: pointer;
+
+}
+.b {
+	overflow: hidden;
+  	position: relative;
+	line-height: 1.2em;
+	max-height: 6.1em;
+	text-align: justify;
+	margin-right: -1em;
+	padding-right: 1em;	
+}
+.b:before {
+	content: '...';
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.b:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	width: 1em;
+	height: 1em;
+	margin-top: 0.2em;
+	background: white;
+}
+.lblanimename {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 100%;
+	font-size: 15px;
+}
+.f1, .f2, .f3, .f4 {
+	transition: all 0.2s;
+	margin-right: 15px;
+	font-size: 17px;
+}
+.f1:hover, .f2:hover, .f3:hover, .f4:hover {
+	cursor: pointer;
+	color: #FFAB00;
+}
+.footer {
+	background-color: #FFAB00;
+	margin-top: 35px;
+	height: 5px;
+}
+.tint {
+    position: relative;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    -webkit-box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+    -moz-box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+    box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+  }
+  
+.tint:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: none;
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .15s linear;
+  }
+  
+.tint:hover:before {
+    background: rgba(255, 171, 0, 0.8);
+  }
