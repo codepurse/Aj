@@ -1,0 +1,107 @@
+@media screen and (min-width: 1200px) {
+	.container {
+		max-width: 1366px !important;
+	}
+}
+body,html {
+	width: 100%;
+	height: 100%;
+	background-color: #111111;
+}
+.imglogo {
+	width: 37px !important;
+}
+.btnstore,.btncommunity,.btnabout,.btnsupport {
+	color: white !important;
+	font-family: muli;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+.btnstore:hover,.btncommunity:hover,.btnabout:hover,.btnsupport:hover {
+	color: #EF5350 !important;
+}
+.maincontainer {
+	height: 100vh;
+	background: linear-gradient(
+                     rgba(20,20,20, 0), 
+                     rgba(20,20,20, 1)),
+                     url("../Image/try.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	filter: saturate(1.5);
+}
+.lblheroes {
+	font-family: Plane Crash;
+	font-size: 80px;
+	color: white;
+	line-height: 25px;
+}
+hr {
+	width: 100px;
+	height: 1px;
+	background-color: #EF5350;
+	text-align: left;
+	margin: 0px;
+}
+.lblheroesdescription {
+	width: 50%;
+	font-family: muli;
+	font-size: 15px;
+	color: #E0E0E0;
+}
+.btnall {
+	color: white;
+	font-family: Lemon/Milk;
+	font-size: 17px;
+	padding: 7px 30px;
+	background-color: transparent;
+	border: 1px solid white;
+	cursor: pointer;
+	font-weight: bold;
+	border-radius: 50PX;
+	transition: all 0.2s;
+	mix-blend-mode: screen;
+	outline: none !important;
+	margin-top: 10px;
+}
+.btnall:hover {
+	color: #212121;
+	background-color: white;
+}
+.lblroles {
+	font-family: Amateur Slash;
+	color: white;
+	font-size: 30px;
+}
+.lblheroesdes {
+	font-family: muli;
+	font-size: 17px;
+	color: white;
+	width: 75%;
+}
+.lbltitle {
+	font-family: Plane Crash;
+	font-size: 35px;
+	font-weight: bold;
+	color: #F44336;
+	line-height: 25px;
+}
+.lbltitlesub {
+	font-family: Plane Crash;
+	font-size: 13px;
+	font-weight: normal;
+	color: white;
+}
+.lbltitledes {
+	font-family: muli;
+	font-size: 17px;
+	color: white;
+}
+.constr {
+	padding-top: 70px;
+	padding-bottom: 70px;	
+}
+.conagi {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}

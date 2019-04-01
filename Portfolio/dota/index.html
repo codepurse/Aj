@@ -11,7 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="Css/font.css">
 	<title>Dota 2</title>
 </head>
-<body>
+<body onload = "getSeconds()">
 	<div class="contain-fluid maincontainer">
 		<div class="container h-100">
 			<nav class="navbar navbar-expand-lg navbar-dark">
@@ -41,7 +41,7 @@
 					d no matter if it's their 10th hour of play or 1,000th, there's always something new to discover. With regular updates that ensure a constant evolution of gameplay, features, and heroes, Dota 2 has taken on a life of its own. </label><br>
 					<div  style="margin-top:15px;margin-left: 0px !important;">
 						<button class="btnplay">Play Now</button>
-						<button class="btnwatch">Watch Gameplay</button>
+						<button class="btnwatch"  onmouseover="onHover();" onmouseout="offHover();"><img src="Image/play.png" class="img-fluid imgplay" style="width:17px;margin-right:10px;margin-top:-2px;">Watch Gameplay</button>
 					</div><br>
 					<div class="imgplatform" style="margin-top:5px">
 						<img src="Image/windows.png" class="img-fluid" style="margin-right: 12px;width: 20px;cursor: pointer;">
@@ -116,7 +116,7 @@
 			<div class="row"  style="margin-top:30px;">
 				<div class="col-lg-4">
 					<div style="position: relative;text-align: center;">
-						<img src="Image/hero.jpg" class="img-fluid imgheropedia">
+						<a href="heroes.html"><img src="Image/hero.jpg" class="img-fluid imgheropedia"></a>
 						<label style="color: white;position: absolute;font-family: Plane Crash;top:50%;left: 50%;transform: translate(-50%, -50%);font-weight: bold;font-size: 15px;">heroes</label>
 						<label style="color: #edcf90;position: absolute;font-family: muli;font-weight: bold;font-size: 15px;top:58%;left: 50%;transform: translate(-50%, -50%);font-weight: bold;width: 70%;">Take a look at all the heroes</label>
 					</div>
@@ -140,22 +140,93 @@
 	</div>
 	<div class="container-fluid">
 		<div class="container footer">
-			<div class="row text-center" style="margin-top: 50px;padding-bottom: 40px;">
+			<div class="row text-center" style="margin-top: 50px;padding-bottom: 10px;">
 				<div class="col-lg-12" style="margin-top: 50px;">
 					<label class="lblfooter">unleash the hero within</label><br>
 					<label class="lblbattle">The Weekend Battle Cup is a weekly amateur tournament, run automatically in the Dota 2 client. They are available for Dota Plus subscribers, during tournament events, or through Weekend Battle Cup Tickets. Players form teams within an allotted time, and compete in an eight-team single elimination tournament. Tournament winners are given various rewards depending on the event. </label> <br>
-					<img src="Image/dota-2.png" class="img-fluid" style="width: 50px;margin-top: 40px;">
+					<div id="countholder">
+						 <div><span class="days" id="days"></span><div class="smalltext">Days</div></div>
+						 <div><span class="hours" id="hours"></span><div class="smalltext">Hours</div></div>
+						 <div><span class="minutes" id="minutes"></span><div class="smalltext">Minutes</div></div>
+						 <div><span class="seconds" id="seconds"></span><div class="smalltext">Seconds</div></div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<script type="text/javascript">
-		$(document).ready(function(){
-		    $(".imglogo").hover(
-		        function() {$(this).attr("src","Image/dota-2.png").fadeIn(500);},
-		        function() {$(this).attr("src","Image/dota.png").fadeIn(500);
-		    });
-		});
-	</script>
+	<div class="container-fluid">
+		<div class="container" >
+			<div class="row text-center">
+				<div class="col-lg-12">
+					<img src="Image/valve(1).png" class="img-fluid">
+				</div>
+			</div>
+			<div class="row text-center" style="margin-top: -20px;">
+				<div class="col-lg-12">
+					<label style="color: white;font-family: muli;font-size: auto;width: 100%;">© Valve Corporation, all rights reserved. Valve, the Valve logo, Steam, the Steam logo, Source, the Source logo, Valve Source and Dota are trademarks and/or registered trademarks of Valve Corporation. </label>
+				</div>
+			</div>
+		</div>
+	</div>
+<script>
+
+	function onHover() {
+		$(".imgplay").attr('src','Image/playblack.png');
+	}
+	function offHover() {
+		$(".imgplay").attr('src','Image/play.png');
+	}
+
+
+
+	var curday;
+	var secTime;
+	var ticker;
+	 
+	function getSeconds() {
+	 var nowDate = new Date();
+	 var dy = 6 ; //Sunday through Saturday, 0 to 6
+	 var countertime = new Date(nowDate.getFullYear(),nowDate.getMonth(),nowDate.getDate(),20,0,0); //20 out of 24 hours = 8pm
+	 
+	 var curtime = nowDate.getTime(); //current time
+	 var atime = countertime.getTime(); //countdown time
+	 var diff = parseInt((atime - curtime)/1000);
+	 if (diff > 0) { curday = dy - nowDate.getDay() }
+	 else { curday = dy - nowDate.getDay() -1 } //after countdown time
+	 if (curday < 0) { curday += 7; } //already after countdown time, switch to next week
+	 if (diff <= 0) { diff += (86400 * 7) }
+	 startTimer (diff);
+	}
+	 
+	function startTimer(secs) {
+	 secTime = parseInt(secs);
+	 ticker = setInterval("tick()",1000);
+	 tick(); //initial count display
+	}
+	 
+	function tick() {
+	 var secs = secTime;
+	 if (secs>0) {
+	  secTime--;
+	 }
+	 else {
+	  clearInterval(ticker);
+	  getSeconds(); //start over
+	 }
+	 
+	 var days = Math.floor(secs/86400);
+	 secs %= 86400;
+	 var hours= Math.floor(secs/3600);
+	 secs %= 3600;
+	 var mins = Math.floor(secs/60);
+	 secs %= 60;
+	 
+	 //update the time display
+	 document.getElementById("days").innerHTML = curday;
+	 document.getElementById("hours").innerHTML = ((hours < 10 ) ? "0" : "" ) + hours;
+	 document.getElementById("minutes").innerHTML = ( (mins < 10) ? "0" : "" ) + mins;
+	 document.getElementById("seconds").innerHTML = ( (secs < 10) ? "0" : "" ) + secs;
+	}
+</script>
 </body>
 </html>

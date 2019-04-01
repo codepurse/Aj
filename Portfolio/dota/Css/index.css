@@ -187,4 +187,41 @@ hr {
 	font-size: 17px;
 	color: #BDBDBD;
 	width: 70%;
-}s
+}
+
+
+#countholder{
+ font-family: Lemon/Milk;
+ font-weight: bold;
+ color: #edcf90;
+ display: inline-block;
+ text-align: center;
+ font-size: 48px;
+ background-color: transparent;
+ padding:10px;
+ border-radius: 3px;
+ margin-bottom:30px;
+ line-height: 1.1;
+}
+ 
+#countholder > div{
+ padding: 4px 4px;
+ display: inline-block;
+}
+ 
+#countholder div > span{
+ border-radius: 3px;
+ display: inline-block;
+}
+ 
+#countholder .smalltext{
+ padding-top: 5px;
+ font-size: 16px;
+}
+.hr1 {
+	height: 1px;
+	width: 100%;
+	background-color: #EF5350;
+	text-align: left;
+	margin: 0 0;
+}

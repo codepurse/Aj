@@ -50,11 +50,17 @@
 	.coldire {
 		padding-left: 15px !important;
 	}
+	.imgheropedia {
+		margin-top: 10px;
+	}
 	.lblfooter {
 		font-size: 20px;
 	}
 	.lblbattle {
 		font-size: 15px;
 		width: 100%;
+	}
+	#countholder {
+		font-size: 25px;
 	}
 }
