@@ -1,0 +1,76 @@
+@media screen and (max-width: 752px) {
+  .arrowdown {
+    left: 47.6% !important;  
+  }
+	.lblh, .lbli {
+		font-size: 80px;
+
+	}
+	.colright, .colleft {
+		padding: 1px !important;
+    top:-8%;
+	}
+  ul > li {
+    display: inline;
+  }
+  .lblabout {
+    font-size: 15px;
+    
+  }
+  .colfgt {
+    text-align: center !important;
+  }
+  .lbldesign {
+    font-size: 20px;
+  }
+  .lblsubdesign {
+    width: 100%;
+  }
+  .lblname {
+    font-size: 25px;
+  }
+  .lbldescription {
+    font-size: 17px;
+    width: 100%;
+  }
+  .image {
+    display: inline !important; 
+    text-align: center !important;
+    vertical-align: middle;
+  }
+  .imgimage {
+    display: inline !important;
+    margin-right: 10px;
+    width: 100%;
+    margin-top: -100px;
+  }
+  .vl {
+    visibility: hidden;
+  }
+  .colabout {
+    padding: 0px !important;
+    margin: 0px !important;
+    text-align: center !important;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .arrowdown {
+    left: 45.6% !important;  
+  }
+}
+@media screen and (max-width: 349px) {
+  .arrowdown {
+    left: 44.7% !important;  
+  }
+}
+@media screen and (max-width: 477px) {
+  .arrowdown {
+    left: 46.3% !important;  
+  }
+}
+@media screen and (max-width: 381px) {
+  .arrowdown {
+    left: 45.5  % !important;  
+  }
+}

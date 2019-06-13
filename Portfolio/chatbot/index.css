@@ -1,0 +1,85 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #25252f !important;
+    scroll-behavior: smooth;
+}
+@media screen and (min-width: 1200px) {
+	.container {
+		max-width: 1300px !important;
+	}
+}
+.navbar-brand img {
+	width: 70px;
+	padding-top: 5px;
+}
+.con1 {
+    margin-top:-4%;
+}
+.modal-backdrop {background: none;}
+.btnfeatures:hover , .btnaboutus:hover , .btndocs:hover {
+    color: #ffd497 !important;
+    cursor: pointer;
+    transform: all 0.2s;
+}
+.p1 {
+    color: white;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 20px;
+}
+.p2 {
+    color: whitesmoke;
+    font-family: muli Semibold;
+    font-size: 27px;
+}
+#p2 {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+.hide {
+    opacity: 0 !important;
+}
+
+.l2 {
+    color:white;
+    font-family: Montserrat Semibold;
+    font-size: 24px;
+}
+.l3 {
+    color:white;
+    font-family: lato;
+    font-size: 15px;
+    width:90%;
+}
+.abot {
+    color:	#E04F20;
+}
+.frm {
+    padding-top:20px;
+}
+.btnsubmit {
+    padding : 10px 25px 10px 30px;
+    color:whitesmoke;
+    font-family: Montserrat;
+    font-size: 14px;
+    border: 0px;
+    background-color: #2B2B37;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+    outline: none !important;
+}
+.btnsubmit:hover {
+    background-color: #CD5227;
+}
+.txt1 {
+    background-color: #2B2B37;
+    border-radius: 20px;
+    border: 0px;
+    padding : 10px 20px 10px 20px;
+    font-size: 14px;
+    outline: none;
+    color: whitesmoke;
+    width: 250px;
+}
