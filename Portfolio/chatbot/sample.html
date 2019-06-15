@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="Css/bootstrap.min.css">
 	<script src="Script\jquery-3.3.1.min.js"></script>
 	<script src="Script\bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="Css/bootstrap.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -24,9 +24,9 @@
 	        <div class="collapse navbar-collapse" id="collapse">
 	            <div class="col2 ml-auto">
 	            	<ul class="nav navbar-nav">
-	                	<li><a class="nav-link btnfeatures" style="margin-right: 20px;color:white;font-family: muli;font-size: 17px;">Features</a></li>
-	                	<li><a class="nav-link btndocs" style="margin-right: 20px;color:white;font-family: muli;font-size: 17x;" data-toggle="modal" data-backdrop="false" data-target="#exampleModalLong">Docs</a></li>
-	                    <li><a class ="nav-link btnaboutus" target="_self"  style="margin-right: 20px;color:white;font-family: muli;font-size: 17px;">About us</a></li> 
+	                	<li><a class="nav-link btnfeatures" style="margin-right: 20px;color:white;font-family: muli;font-size: 17px;" href="404.html">Features</a></li>
+	                	<li><a class="nav-link btndocs" style="margin-right: 20px;color:white;font-family: muli;font-size: 17x;"  href="404.html">Docs</a></li>
+	                    <li><a class ="nav-link btnaboutus" target="_self"  style="margin-right: 20px;color:white;font-family: muli;font-size: 17px;"  href="404.html">About us</a></li> 
 	                </ul>
 	            </div>
 	        </div>
@@ -43,34 +43,15 @@
 						So enter your name below and start chatting him.
 					</label><Br>
 					<div class="frm">
-						<input type = "text" class="txt1" placeholder="Enter your name here">
-						<button type="submit" class="btnsubmit">Get Started <img src="right.png" class="img-fluid" style="margin-left:8px;"></button>
+						<input type = "text" class="txt1" id="txtname" placeholder="Enter your name here">
+						<button type="button" class="btnsubmit" id="btnsubmit" onclick="submitName()">Get Started <img src="right.png" class="img-fluid" style="margin-left:8px;"></button>
+						<p class="perror" id ="perror">Insert your name in the textbox.</p>
 					</div>
 				</div>
-				<div class="col-lg-6">
+				<div class="col-lg-6 order-first order-md-last order-lg-last">
 					<img src="try.gif" class="img-fluid mx-auto d-block" style="margin-top: -18%;">
 					<p class="text-center p2" id ="p2">Hi there!</p>
 				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Modal -->
-	<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				<span aria-hidden="true">&times;</span>
-				</button>
-			</div>
-			<div class="modal-body">
-				...
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-				<button type="button" class="btn btn-primary">Save changes</button>
-			</div>
 			</div>
 		</div>
 	</div>
@@ -91,6 +72,25 @@
 			            counter = 0;
 			        }
 			    }, 500);
+		}
+
+		var enter = document.getElementById("txtname");
+   		enter.addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+				event.preventDefault();
+				document.getElementById("btnsubmit").click();
+				addinput();
+        	}
+   		});
+
+		function submitName() {
+			if (document.getElementById("txtname").value == "" ) {
+				document.getElementById("perror").style.visibility = "visible";
+			} 
+			else {
+				localStorage['name'] = document.getElementById("txtname").value;
+				location.href = "home.html";
+			}
 		}
 </script>
 </html>

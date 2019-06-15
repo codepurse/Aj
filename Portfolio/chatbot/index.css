@@ -3,6 +3,7 @@ html, body {
     width: 100%;
     background-color: #25252f !important;
     scroll-behavior: smooth;
+    overflow: hidden !important;
 }
 @media screen and (min-width: 1200px) {
 	.container {
@@ -16,7 +17,6 @@ html, body {
 .con1 {
     margin-top:-4%;
 }
-.modal-backdrop {background: none;}
 .btnfeatures:hover , .btnaboutus:hover , .btndocs:hover {
     color: #ffd497 !important;
     cursor: pointer;
@@ -83,3 +83,47 @@ html, body {
     color: whitesmoke;
     width: 250px;
 }
+.perror {
+    font-family: muli;
+    font-size: 13px;
+    color: #CD5227;
+    margin-top: 2.5%;
+    margin-left: 1%;
+    visibility: hidden;
+}
+
+  /***************Features*****************/
+  .lbl404 {
+      font-family: muli;
+      font-weight: bold;
+      font-size: 200px;
+      color:White;
+  }
+  .lbloops {
+      font-size: 35px;
+      font-family: muli;
+      font-weight: bold;
+      color: whitesmoke;
+      text-align: center;
+  }
+  .lblpage {
+      font-family: muli;
+      font-size: 14px;
+      color: #757677;
+  }
+  .btnhome {
+    margin-top:25px;
+    padding : 10px 25px 10px 30px;
+    color:whitesmoke;
+    font-family: Montserrat;
+    font-size: 14px;
+    border: 0px;
+    background-color: #2B2B37;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+    outline: none !important;
+  }
+  .btnhome:hover {
+    background-color: #CD5227;
+  }
