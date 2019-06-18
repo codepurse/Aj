@@ -3,6 +3,7 @@ html, body {
     width: 100%;
     background-color: #25252f !important;
     scroll-behavior: smooth;
+    overflow: hidden;
 }
 @media screen and (min-width: 1200px) {
 	.container {
