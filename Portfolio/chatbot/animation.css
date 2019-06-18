@@ -1,0 +1,129 @@
+
+.round {
+      background-color: #2c2c37;
+      width: 117px;
+      height:33px;
+      position: absolute;
+      top: 12%;
+      left: 5%;
+      border-radius: 20px;
+      animation: leftright 1.5s infinite alternate;
+  }
+.round1 {
+    background-color: #2c2c37;
+    width: 130px;
+    height:33px;
+    position: absolute;
+    top: 25%;
+    left:55%;
+    border-radius: 20px;
+    animation: rightleft 1.5s infinite alternate;
+}
+.round2 {
+    background-color: #2c2c37;
+    width: 157px;
+    height:33px;
+    position: absolute;
+    top:40%;
+    left:8%;
+    border-radius: 20px;
+    animation: rightleftbottom 1.5s infinite alternate;
+}
+  @keyframes leftright {
+    0% { transform: translate(0);}
+    100% { transform: translate(50%,0);}
+  }
+  @keyframes rightleft {
+    0% { transform: translate(0);}
+    100% { transform: translate(-50%,0);}
+  }
+  @keyframes rightleftbottom {
+    0% { transform: translate(0);}
+    100% { transform: translate(55%,0);}
+  }
+
+  .round3 {
+      background-color: #2c2c37;
+      width: 130px;
+      height:33px;
+      position: absolute;
+      top: 12%;
+      left: 30%;
+      border-radius: 20px;
+      animation: leftright2 1.5s infinite alternate;
+  }
+  .round4 {
+    background-color: #2c2c37;
+    width: 100px;
+    height:33px;
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    border-radius: 20px;
+    animation: rightleft2 1.5s infinite alternate;
+}
+.round5 {
+  background-color: #2c2c37;
+  width: 130px;
+  height:33px;
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  border-radius: 20px;
+  animation: rightleftbottom2 1.5s infinite alternate;
+}
+  @keyframes leftright2 {
+    0% { transform: translate(0);}
+    100% { transform: translate(50%,0);}
+  }
+  @keyframes rightleft2 {
+    0% { transform: translate(0);}
+    100% { transform: translate(50%,0);}
+  }
+  @keyframes rightleftbottom2 {
+    0% { transform: translate(0);}
+    100% { transform: translate(-50%,0);}
+  }
+
+  .round6 {
+    background-color: #2c2c37;
+    width: 100px;
+    height:33px;
+    position: absolute;
+    top: 12%;
+    left: 25%;
+    border-radius: 20px;
+    animation: leftright3 1.5s infinite alternate;
+}
+.round7 {
+  background-color: #2c2c37;
+  width: 75px;
+  height:33px;
+  position: absolute;
+  top: 25%;
+  left: 32%;
+  border-radius: 20px;
+  animation: rightleft3 1.5s infinite alternate;
+}
+.round8 {
+  background-color: #2c2c37;
+  width: 130px;
+  height:33px;
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  border-radius: 20px;
+  animation: rightleftbottom3 1.5s infinite alternate;
+}
+@keyframes leftright3 {
+  0% { transform: translate(0);}
+  100% { transform: translate(-50%,0);}
+}
+@keyframes rightleft3 {
+  0% { transform: translate(0);}
+  100% { transform: translate(-50%,0);}
+}
+@keyframes rightleftbottom3 {
+  0% { transform: translate(0);}
+  100% { transform: translate(40%,0);}
+}

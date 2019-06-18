@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="animation.css">
     <link rel="stylesheet" type="text/css" href="Css/bootstrap.min.css">
 	<script src="Script\jquery-3.3.1.min.js"></script>
 	<script src="Script\bootstrap.min.js"></script>
@@ -18,7 +19,7 @@
 	        	<span class="navbar-toggler-icon"></span>
 	        </button>
 	        <nav class="navbar-brand" href="#">
-	      		<a href="#"><img src="chat2.png" class="img-fluid"></a>
+	      		<a href="#"><img src="newlogo.png" class="img-fluid"></a>
 	        	<span style="margin-left: 5px;color:white;font-family: muli;font-size: 25px;cursor: pointer;"><b>a-bot</b></span>
 	      	</nav>
 	        <div class="collapse navbar-collapse" id="collapse">
@@ -34,19 +35,61 @@
 		</div>
 	</div>
     <div class="container-fluid w-100 h-100">
-        <div class="container w-100 h-100">
+        <div class="container w-100 h-100 con1">
             <div class="row align-items-center h-100">
+				<p class="pchoose text-center"><span id ="lname"></span> choose your chatbot <Br> <span class="pchoosesub">Every chatbot has different personality. Make sure to chat everyone and make friend with them. </span>	</p>
+				
                 <div class="col-lg-12">
-                    <input type="text" class="txtuser" id="txtuser">
+					<div class="card-deck">
+						<div class="card card1" data-rel="1">
+							<div class="round"></div>
+							<div class="round1"></div>
+							<div class="round2"></div>
+							<img class="card-img-top img-fluid imgbot mx-auto d-block " id = "1"  src="robot2.png" data-rel alt="Card image cap">
+						  	<div class="card-body">
+								<h5 class="card-title text-center">Elkie</h5>
+								<p class="card-text text-center">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+								<p class="card-text text-center"><small class="text-muted">Continue with this bot ..</small></p>
+							</div>
+						</div>
+						<div class="card card1" data-rel="2">
+							<div class="round3"></div>
+							<div class="round4"></div>
+							<div class="round5"></div>	
+						  <img class="card-img-top img-fluid imgbot mx-auto d-block" id="2" src="bay.png" alt="Card image cap">
+						  <div class="card-body">
+								<h5 class="card-title text-center">Baymax</h5>
+								<p class="card-text text-center">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+								<p class="card-text text-center"><small class="text-muted">Continue with this bot ..</small></p>
+						  </div>
+						</div>
+						<div class="card card1">
+							<div class="round6"></div>
+							<div class="round7"></div>
+							<div class="round8"></div>
+						  	<img class="card-img-top img-fluid imgbot mx-auto d-block" src="robot4.png" alt="Card image cap">
+						  <div class="card-body">
+								<h5 class="card-title text-center">Blue</h5>
+								<p class="card-text text-center">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+								<p class="card-text text-center"><small class="text-muted">Continue with this bot ..</small></p>
+						  </div>
+						</div>
+					</div>
                 </div>
             </div>
         </div>
-    </div>
+	</div>
 </body>
 <script>
-    /*
+
     var myname = localStorage['name'];
-    document.getElementById("pname").innerHTML = "Hello " + myname;
-    */
+    document.getElementById("lname").innerHTML = "Hi " + "<span style=color:#CD5227>" + myname +"</span>" + "!";
+  
+
+	$(function() {
+  $('.imgbot').hover(function() {
+    $('#' + $(this).data('rel')).toggleClass('hover');
+  });
+});
 </script>
 </html>

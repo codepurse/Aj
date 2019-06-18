@@ -3,7 +3,6 @@ html, body {
     width: 100%;
     background-color: #25252f !important;
     scroll-behavior: smooth;
-    overflow: hidden !important;
 }
 @media screen and (min-width: 1200px) {
 	.container {
@@ -11,16 +10,18 @@ html, body {
 	}
 }
 .navbar-brand img {
-	width: 70px;
+	width: 55px;
 	padding-top: 5px;
 }
 .con1 {
     margin-top:-4%;
 }
 .btnfeatures:hover , .btnaboutus:hover , .btndocs:hover {
-    color: #ffd497 !important;
+    border-radius: 20px;
+    color: #CD5227 !important;
     cursor: pointer;
-    transform: all 0.2s;
+    transition: 0.2s;
+    
 }
 .p1 {
     color: white;
@@ -32,6 +33,7 @@ html, body {
     color: whitesmoke;
     font-family: muli Semibold;
     font-size: 27px;
+    cursor: default
 }
 #p2 {
     opacity: 1;
@@ -45,12 +47,14 @@ html, body {
     color:white;
     font-family: Montserrat Semibold;
     font-size: 24px;
+    line-height: 1.6;
 }
 .l3 {
     color:white;
     font-family: lato;
     font-size: 15px;
     width:90%;
+    line-height: 1.6;
 }
 .abot {
     color:	#E04F20;
@@ -127,3 +131,61 @@ html, body {
   .btnhome:hover {
     background-color: #CD5227;
   }
+
+  .txtask {
+    border-top:0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid white;
+    background-color:  transparent;
+    width: 70%;
+  }
+  .pchoose {
+      font-family: muli Semibold;
+      color: white;
+      font-size: 30px;
+      width: 100%;  
+  }
+  .pchoosesub {
+    font-family: muli;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+  }
+  .card1 {
+    background-color: #25252f !important;
+    border: 0px !important;
+    color: whitesmoke; 
+    transition: all 0.2s;
+    cursor: pointer;
+    line-height: 1.6;
+  }
+  .card1:hover {
+    box-shadow: 1px 1px 10px 1px rgba(27,27,28,1);
+  }
+  .imgbot {
+    width:150px !important;
+    padding-top: 20px;
+    position: relative;
+  }
+  #imgbot:hover,
+  #imgbot.hover {
+    animation: mover 0.5s infinite alternate;
+  }
+  @keyframes mover {
+      0% { transform: translate(0);}
+      100% { transform: translateY(-10px);}
+  }
+  .text-muted {
+      font-family: muli;
+      cursor: pointer;
+  }
+  .text-muted:hover {
+      transition: all 0.2s;
+      color: #CD5227 !important;
+  }
+
+
+
+
+  
