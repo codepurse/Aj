@@ -1,10 +1,10 @@
 @font-face {
 	font-family: "muli";
-	src: url("../Font/Muli/muli/Muli.ttf");
+	src: url("./Font/Muli/muli/Muli.ttf");
 }
 @font-face {
 	font-family: "Montserrat";
-	src: url("../Font/montserrat/Montserrat-Regular.otf");
+	src: url("./Font/montserrat/Montserrat-Regular.otf");
 }
 html, body {
     height: 100%;
@@ -177,9 +177,9 @@ html, body {
     padding-top: 20px;
     position: relative;
   }
-  #imgbot:hover,
-  #imgbot.hover {
-    animation: mover 0.5s infinite alternate;
+  .imgbot:hover,
+  .imgbot.hover {
+    animation: mover 0.7s infinite alternate;
   }
   @keyframes mover {
       0% { transform: translate(0);}
@@ -189,7 +189,7 @@ html, body {
       font-family: muli;
       cursor: pointer;
   }
-  .text-muted:hover {
+  .text-muted:hover, .text-muted.hover {
       transition: all 0.2s;
       color: #CD5227 !important;
   }

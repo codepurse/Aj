@@ -45,33 +45,33 @@
 							<div class="round"></div>
 							<div class="round1"></div>
 							<div class="round2"></div>
-							<img class="card-img-top img-fluid imgbot mx-auto d-block " id = "1"  src="robot2.png" data-rel alt="Card image cap">
+							<img class="card-img-top img-fluid imgbot mx-auto d-block "  id = "1" src="robot2.png" alt="Card image cap">
 						  	<div class="card-body">
 								<h5 class="card-title text-center">Elkie</h5>
 								<p class="card-text text-center">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-								<p class="card-text text-center"><small class="text-muted">Continue with this bot ..</small></p>
+								<p class="card-text text-center"><small class="text-muted" >Continue with this bot ..</small></p>
 							</div>
 						</div>
 						<div class="card card1" data-rel="2">
 							<div class="round3"></div>
 							<div class="round4"></div>
 							<div class="round5"></div>	
-						  <img class="card-img-top img-fluid imgbot mx-auto d-block" id="2" src="bay.png" alt="Card image cap">
+						  <img class="card-img-top img-fluid imgbot mx-auto d-block" id = "2" src="bay.png" alt="Card image cap">
 						  <div class="card-body">
 								<h5 class="card-title text-center">Baymax</h5>
 								<p class="card-text text-center">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-								<p class="card-text text-center"><small class="text-muted">Continue with this bot ..</small></p>
+								<p class="card-text text-center"><small class="text-muted" >Continue with this bot ..</small></p>
 						  </div>
 						</div>
-						<div class="card card1">
+						<div class="card card1" data-rel="3">
 							<div class="round6"></div>
 							<div class="round7"></div>
 							<div class="round8"></div>
-						  	<img class="card-img-top img-fluid imgbot mx-auto d-block" src="robot4.png" alt="Card image cap">
+						  	<img class="card-img-top img-fluid imgbot mx-auto d-block" id = "3" src="robot4.png" alt="Card image cap">
 						  <div class="card-body">
 								<h5 class="card-title text-center">Blue</h5>
 								<p class="card-text text-center">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-								<p class="card-text text-center"><small class="text-muted">Continue with this bot ..</small></p>
+								<p class="card-text text-center"><small class="text-muted" >Continue with this bot ..</small></p>
 						  </div>
 						</div>
 					</div>
@@ -81,15 +81,16 @@
 	</div>
 </body>
 <script>
-
+	//saving the input value name in cache/localstorage of a computer
     var myname = localStorage['name'];
     document.getElementById("lname").innerHTML = "Hi " + "<span style=color:#CD5227>" + myname +"</span>" + "!";
-  
 
-	$(function() {
-  $('.imgbot').hover(function() {
-    $('#' + $(this).data('rel')).toggleClass('hover');
-  });
-});
+	//when hovering the card it will activate the hoverclass in image
+	$(document).ready(function(){
+		$('.card1').hover(function() {
+    		$('#' + $(this).data('rel')).toggleClass('hover');
+
+  		});
+	});
 </script>
 </html>
