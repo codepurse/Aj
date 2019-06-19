@@ -1,3 +1,11 @@
+@font-face {
+	font-family: "muli";
+	src: url("../Font/Muli/muli/Muli.ttf");
+}
+@font-face {
+	font-family: "Montserrat";
+	src: url("../Font/montserrat/Montserrat-Regular.otf");
+}
 html, body {
     height: 100%;
     width: 100%;
@@ -26,7 +34,7 @@ html, body {
 }
 .p1 {
     color: white;
-    font-family: Montserrat;
+    font-family: 'Montserrat',muli;
     font-weight: bold;
     font-size: 20px;
 }
