@@ -188,10 +188,12 @@ html, body {
   .text-muted {
       font-family: muli;
       cursor: pointer;
+      text-decoration: none !important;
   }
   .text-muted:hover, .text-muted.hover {
       transition: all 0.2s;
       color: #CD5227 !important;
+     
   }
 
 
