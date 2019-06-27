@@ -35,6 +35,15 @@ body,html {
 	cursor: pointer;
 	transition: all 0.1s;
 }
+.btnworks {
+	font-weight: bold;
+	font-family: muli;
+	color: #424242 !important;
+	font-size: 18px;
+	cursor: pointer;
+	transition: all 0.1s;
+}
+}
 .row1 {
 	padding: 5px;
 	padding: 0px !important;
